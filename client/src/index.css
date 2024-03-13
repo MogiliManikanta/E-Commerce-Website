@@ -1,0 +1,468 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefine Sans',sans-serif;
+  font-size: 15px;
+  /* overflow-x: hidden; */
+}
+
+body{
+  overflow-x: hidden;
+}
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Playfair Display', serif; */
+
+/* //navbar css */
+.navbar {
+  font-size: 17px;
+  line-height: 26px;
+  text-transform: uppercase;
+  /* background:  rgb(67 0 86) !important; */
+  /* box-shadow: 0 8px 6px -6px gray;*/
+  --webkit-box-shadow: 0 8px 6px -6px rgba(144, 133, 133, 0.912);
+  /* border-bottom: solid gray !important;  */
+  /* margin-bottom: 5%; */
+  position:sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-link {
+  font-weight: 300 !important;
+}
+
+.active {
+  color: red !important;
+}
+
+.nav-item .nav-link:hover{
+  color: red !important;
+}
+.navbar-brand {
+  font-weight: 700;
+  font-family: "roboto", sans-serif;
+  letter-spacing: 3px;
+}
+
+.search-form {
+  margin-right: 10px;
+  margin-top: 4px;
+}
+.search-form input {
+  border: none;
+  border-radius: 0;
+}
+.search-form button {
+  background-color: #000000;
+  border-radius: 0;
+  color: white;
+}
+
+/* =============================
+==========footer============= */
+
+.footer {
+  color: white;
+  padding: 25px;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000);
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.footer a:hover {
+  color: #ffefba;
+  border-bottom: 1px solid #ffefba;
+}
+/* =================================
+======== page not found css ======= */
+.pnf {
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pnf-title {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.pnf-heading {
+  font-weight: normal;
+}
+
+.pnf-btn {
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+.pnf-btn:hover {
+  background-color: black;
+  color: white;
+}
+/* ========================================= */
+/* =========contact us ========= */
+.contactus {
+  margin: 0;
+  padding: 0;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==================== */
+.product-link {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.cat-btn {
+  padding: 40px 0px;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  background-image: url("https://t4.ftcdn.net/jpg/03/09/24/63/360_F_309246316_uXQOS2tcdUceurcmAJprpxBbbktiSW0C.jpg");
+  
+}
+.cat-btn:hover {
+  /* transform: scale(0.99); */
+  /* padding: 40px 0px; */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+  font-size: 30px;
+  font-style: bold;
+  background-image: url("https://thumbs.dreamstime.com/b/details-golden-texture-background-gold-color-paint-wall-luxury-golden-background-wallpaper-gold-foil-details-golden-106104769.jpg");
+  color: #00295b !important;
+}
+/* ================
+====dashboard
+=================== */
+
+.dashboard {
+  margin-top: 100px !important;
+}
+
+.dashboard-menu h4 {
+  background-color: #00408e !important;
+  color: white;
+  padding: 20px 0px;
+  border-radius: 10px;
+}
+
+
+/* categories list */
+.menuH
+{
+    
+    margin: 7px;
+    width: 100%; 
+    float:none;
+    
+    /* height: 36px; */
+    /* background: #D4D4D4; */
+    /* border: 1px solid #BBB; */
+    position:relative;
+    z-index:4;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    /* line-height: 26px; */
+    text-transform: uppercase;
+    list-style: none;
+    padding: 0;
+}
+
+.menuH li
+{
+    padding: 0;
+    /*margin: 0;
+    display: block; TODO: I am testing them if they can be removed. If can, remove them.*/
+    float: left;
+    height: 36px;
+    position: relative;
+}
+.menuH li:hover, .menuH li.onhover
+{
+    background: white;
+}
+
+ul.menuH a
+{
+    /* padding: 0 30px; */
+    
+    font-family: "Poppins", sans-serif;
+   font-size: 17px;
+   line-height: 26px;
+   text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.505);
+    display: block;
+    outline: 0;
+    text-decoration: none;
+}
+.menuH a:hover
+{
+    color: red;
+}
+.menuH a.arrow
+{
+    background: url(http://www.iconsdb.com/icons/download/caribbean-blue/arrow-211-512.gif) no-repeat right center;
+    background-size: 25px;
+}
+.menuH ul a.arrow
+{
+    background: url(http://www.schaeffler.com/remotemedien/media/_shared_media/technik/images/barden_blue/arrow_transparent_barden_blue.gif) no-repeat 97% center;
+    background-size: 15px;
+}
+ 
+        
+       
+.menuH .menuRight
+{
+    float: right;
+    margin-right: 0px;
+}
+        
+
+.menuH li.separator
+{
+    font-size:0;
+    overflow:hidden;
+    border-left:1px solid #F7F7F7;
+    border-right:1px solid #BBBBBB;
+}
+               
+        
+
+        
+ul.menuH ul
+{
+    width:230px;
+    position: absolute;
+    left: -9999px;
+    /* border: 1px solid #DDD; */
+    /* border-top: 0;  */
+    /* background: #FFF;     */
+    text-align: left;
+    list-style: none; margin: 0;  
+    /*Following 1px(padding-right) will determine how much it is overlapped by the sub-sub-menu */
+    padding: 0 1px 10px 0;   
+    margin-left: 17px;
+}
+
+.menuH li li
+{
+    float: none;
+    white-space:nowrap;
+    height: 26px;
+}
+.menuH li li:hover, .menuH li li.onhover
+{
+    
+
+}
+.menuH ul a
+{
+    padding: 0 20px;
+    line-height: 26px;
+    font-size: 0.9em;
+    font-weight: normal;
+    color: #000000;
+    text-align: left;
+}
+
+.menuH ul a:hover
+{
+    color: white;
+    background-color: #00408e;
+}
+
+.menuH li:hover ul, .menuH li.onhover ul
+{
+    left: -1px;
+    top: auto;
+}
+
+.menuH li:hover .dropToLeft, .menuH li.onhover .dropToLeft
+{
+    left: auto;
+    right: -1px;
+    top: auto;
+}
+.menuH ul ul
+{
+    border-top: 1px solid #DDD;
+}
+
+.menuH li:hover ul ul, .menuH li:hover ul ul ul, .menuH li:hover ul ul ul ul,
+.menuH li.onhover ul ul, .menuH li.onhover ul ul ul, .menuH li.onhover ul ul ul ul
+{
+    left: -9999px;
+    top:0;
+}
+
+.menuH li li:hover ul, .menuH li li li:hover ul, .menuH li li li li:hover ul,
+.menuH li li.onhover ul, .menuH li li li.onhover ul, .menuH li li li li.onhover ul
+{
+    left: 200px;
+}
+        
+
+        
+
+.menuH ul 
+{
+    /* -moz-border-radius: 0px 0px 4px 4px;
+    -webkit-border-radius: 0px 0px 4px 4px; */
+    border-radius: 5px 5px 5px 5px;
+    border-left: 1px solid #DDD;
+    border-top: 1px solid #DDD;
+    border-right: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+
+    /* -moz-box-shadow: 0px 6px 6px #CCC; */
+    /* -webkit-box-shadow: 0px 6px 6px #CCC; */
+    /* box-shadow: 0px 6px 6px #CCC;   */
+    
+   
+   
+            
+    /* Gradient background */
+    /* background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE); */
+    /* background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#EEEEEE));  */
+    background: #FFFFFF;
+}
+
+/* top navbar */
+.top-navbar{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  
+}
+.top-navbar p{
+  margin-top: 13px;
+  margin-left: 15px;
+}
+.top-navbar .icons{
+  margin-top: 13px;
+  margin-right: 15px;
+}
+.top-navbar a{
+  text-decoration: none;
+  color: black;
+  /* margin-left: 10px; */
+}
+.top-navbar a img{
+  margin-bottom: 3px;
+}
+.top-navbar a:hover{
+  color: black;
+}
+@media screen and (max-width:400px){
+  .top-navbar a{
+      font-size: 13px;
+  }
+  .top-navbar a img{
+      width: 15px;
+  }
+  .top-navbar p{
+      font-size: 13px;
+  }
+}
+@media screen and (max-width:320px){
+  .top-navbar a{
+      font-size: 10px;
+  }
+  .top-navbar a img{
+      width: 13px;
+  }
+  .top-navbar p{
+      font-size: 10px;
+  }
+}
+@media screen and (max-width:318px){
+  .top-navbar a{
+      font-size: 8px;
+      margin-left: 0;
+  }
+  .top-navbar a img{
+      width: 10px;
+      margin-left: 0;
+  }
+  .top-navbar p{
+      font-size: 10px;
+      margin-top: 20px;
+  }
+}
+
+
+.list-group-item.active {
+  z-index: 2;
+  color: var(--bs-list-group-active-color);
+  border-radius: 10px;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: var(--bs-dropdown-link-active-color);
+  text-decoration: none;
+  background-color:#FFFFFF;
+}
+
+.list-group {
+  --bs-list-group-color: var(--bs-body-color);
+  --bs-list-group-bg: var(--bs-body-bg);
+  --bs-list-group-border-color: var(--bs-border-color);
+  --bs-list-group-border-width: var(--bs-border-width);
+  --bs-list-group-border-radius: var(--bs-border-radius);
+  --bs-list-group-item-padding-x: 1rem;
+  --bs-list-group-item-padding-y: 0.5rem;
+  --bs-list-group-action-color: var(--bs-secondary-color);
+  --bs-list-group-action-hover-color: var(--bs-emphasis-color);
+  --bs-list-group-action-hover-bg: var(--bs-tertiary-bg);
+  --bs-list-group-action-active-color: var(--bs-body-color);
+  --bs-list-group-action-active-bg: var(--bs-secondary-bg);
+  --bs-list-group-disabled-color: var(--bs-secondary-color);
+  --bs-list-group-disabled-bg: var(--bs-body-bg);
+  --bs-list-group-active-color: #fff;
+  --bs-list-group-active-bg: #0d6efd;
+  --bs-list-group-active-border-color: #0d6efd;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  /* border-radius: var(--bs-list-group-border-radius); */
+  border-radius: 10px !important;
+}
+
+.cat-btn {
+  padding: 90px 0px;
+  font-size: 24px;
+  text-transform: uppercase;
+  /* background-image: url("https://t3.ftcdn.net/jpg/04/42/06/34/360_F_442063430_OjLo5sHK0twuUk2hCGWpjLphEHiLcamL.jpg"); */
+  background-color: #00408e;
+  color: white;
+  border-radius: 20px;
+
+}
+.cat-btn:hover {
+  background-color: #FF9B50;
+  /* background-image: url("https://www.imageshine.in/uploads/gallery/Photo-abstract-blue-background-with-smooth-lines.jpg"); */
+  color: white;
+
+ 
+}
